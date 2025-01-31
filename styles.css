@@ -307,4 +307,7 @@ body{
   .head-text h1::after{
     display:none;
   }
+  .pro-name p{
+    font-size: 12px;
+  }
 }
