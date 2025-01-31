@@ -144,6 +144,7 @@ body{
   justify-content: center;
 }
 
+
 .icon-wrapper a svg{
   height: 30px;
   width: 30px;
@@ -184,7 +185,7 @@ body{
 }
 
 .rate-card{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 50%;
@@ -214,7 +215,7 @@ body{
   /* width: 100% ; */
   background-color : rgb(31, 0, 125);
   border-radius: 10px;
-  bottom: 1px;
+  bottom: 0;
   left: 1px ;
 }
 .percentage{
@@ -229,8 +230,8 @@ body{
 
 }
 
-/* ========mediaquery====== */
-@media (max-width: 1000px){
+/* ========mediaQuery====== */
+@media (max-width: 1160px){
   .big-box{
     width: 80vw;
   }
@@ -238,7 +239,7 @@ body{
     width:90vw;
   }
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
   .big-box{
     width: 95vw;
   }
@@ -246,15 +247,8 @@ body{
     width:105vw;
   }
 }
-@media (max-width: 700px){
-  .big-box{
-    width: 95vw;
-  }
-  .box{
-    width:105vw;
-  }
-}
-@media (max-width: 500px){
+
+@media (max-width: 600px){
   .main{
     padding-inline: 10px;
   }
@@ -262,9 +256,14 @@ body{
     height: 150px;
     width: 150px;
     right: 20px;
+  top: 100px;
   }
   .pro-name h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .pro-name span{
+    font-size: 1rem;
   }
   .overlay{
     padding-left: 15px;
@@ -293,6 +292,7 @@ body{
   .rate-card{
     width: 100%;
     gap: 20px;
+    padding: 20px;
   }
 
   .head-text{
@@ -303,5 +303,8 @@ body{
   }
   .sub-text {
     width: 100%;
+  }
+  .head-text h1::after{
+    display:none;
   }
 }
